@@ -1,0 +1,25 @@
+@media (max-width: 700px) {
+    .animation-container {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0 20px; /* Add padding for smaller screens */
+        margin: 0 auto; /* Center the container */
+        position: relative; /* Ensure relative positioning for absolute children */
+    }
+    .animation {
+        position: absolute; /* Position absolutely within the container */
+        top: 95px; /* Move the animation higher */
+        left: 0; /* Align to the left of the container */
+        width: 100%; /* Full width for smaller screens */
+        height: 100%; /* Full height for smaller screens */
+        background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/hero.png'); /* Background image */
+        background-size: cover; /* Cover the entire area */
+        background-position: center; /* Center the background image */
+        display: flex; /* Flexbox for centering content */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+    }
+    .animation-container .DotLottieReact {
+        position: relative; /* Ensure relative positioning */
+        top: -20px; /* Move the DotLottie animation higher */
+    }
+}
