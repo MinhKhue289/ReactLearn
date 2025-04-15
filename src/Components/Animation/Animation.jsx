@@ -11,7 +11,7 @@ const Animation = () => {
           src={Animation3} // Use the imported animation file
           loop
           autoplay
-          style={{ width: '200px', height: '200px' }}
+          style={{ width: '200px', height: '200px', zIndex: 100, position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)' }}
         />
       </div>
     </div>
