@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar' 
 import Hero from './Components/Hero/Hero'
-import Programs from './Components/Programs/programs'
+import Programs from './Components/Programs/Programs'
 import Tittle from './Components/Tittle/Tittle'
 import About from './Components/About/About'
 import Campus from './Components/Campus/Campus'
