@@ -1,0 +1,92 @@
+nav {
+    width: 100%;
+    /* background: #333; */
+    color:#fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 180px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+.dark-nav {
+  background: #212EA0;
+  height: 70px; /* Default height for dark-nav */
+  transition: all 0.5s ease; /* Smooth transition for height and background */
+}
+.dark-nav.expanded {
+  height: 100px; /* Increased height when scrolled */
+}
+/* MEDIA QUERY */
+@media (max-width:1000px) {
+    .logo {
+        width:140px;
+    }
+    nav ul li {
+        margin:10px 15px;
+    }
+}
+.menu-icon {
+    display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1001; /* Lớn hơn nav ul */
+  width: 30px;
+  cursor: pointer;
+}
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+    position: fixed;
+  }
+  .dark-nav {
+    paddding: 90px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px; /* <-- chỉ chiếm 250px bên phải */
+    background: #212EA0;
+    z-index: 999;
+    padding: 15px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%); /* Ẩn khỏi màn hình bên phải */
+  }
+
+  nav ul.show-mobile-menu {
+    transform: translateX(0); /* Trượt vào từ phải */
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    width: 30px;
+    cursor: pointer;
+  }
+}

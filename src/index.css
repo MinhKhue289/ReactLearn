@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: #F5F5F5;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+a:hover {
+ background: #212EA0;
+  color:#fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding:0 10%;
+}
+.btn  {
+  background: #fff;
+  color:#212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background: #212EA0;
+  color:#fff;
+}
+.btn:hover img {
+  filter: brightness(0) invert(1); /* Changes the image color to white */
+}
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+.dark-btn {
+  background:#212EA0;
+  color:#fff;
+  transition: 0.5s ease;
+}
+.dark-btn:hover {
+  background: #fff;
+  color:#212EA0;
+  transition: 0.5s;
+}
+.dark-btn:hover img {
+  filter: brightness(0) invert(0); /* Changes the image color to black */
+}
+.dark-nav .btn:hover {
+  background-color:#E0E0E0;
+  color: #212EA0; /* Blue text on hover */
+}
+/* MEDIA QUERY */
+@media (max-width:1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn {
+    padding:14px 22px;
+  }
+}
