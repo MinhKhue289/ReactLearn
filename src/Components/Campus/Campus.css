@@ -1,29 +1,33 @@
 .campus {
-    marign:80xp auto;
+    margin: 80px auto;
     width: 90%;
     text-align: center;
     margin-top: 80px;
-    margin-left: 45px
 }
+
 .gallery {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add spacing between images */
     margin: 0 auto;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
+
 .gallery img {
-    width: 23%;
+    width: 23%; /* Default width for larger screens */
     border-radius: 10px;
 }
 
 /* MEDIA QUERY */
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .gallery {
         flex-wrap: wrap;
+        justify-content: center; /* Ensure centering on smaller screens */
     }
     .gallery img {
-        width: 48%;
-        margin-bottom: 25px;
+        width: 40%; /* Adjust image size to fit 2 images per row */
+        margin-bottom: 20px; /* Add spacing between rows */
     }
 }
